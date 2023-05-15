@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --color-esqueleto: $color-esqueleto;
+}
+
+.container__all {
+    position: relative;
+    right: 0;
+    transition: all 300ms;
+}
+

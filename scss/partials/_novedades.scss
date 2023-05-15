@@ -1,0 +1,131 @@
+/***************INICIA BLOG NOVEDADES**************/
+
+.card-image img {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .blog-post {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 920px) {
+    .blog-post {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .blog-post {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+section {
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .blog-post {
+        max-width: 1240px;
+        height: auto;
+        display: grid;
+        gap: 28px;
+    }
+
+    .title-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 120px;
+        margin-bottom: 20px;
+
+        h1 {
+            font-size: 60px;
+            font-family: 'Poppins', sans-serif;
+            color: $font-main-color;
+        }
+
+        p {
+            font-size: 24px;
+            font-family: 'Poppins', sans-serif;
+            color: $font-main-color;
+        }
+
+        span {
+            color: #359df9;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        &:after {
+            content: '';
+            width: 100px;
+            height: 2px;
+            background-color: #359df9;
+            margin-top: 20px;
+        }
+    }
+
+    .card-blogs {
+        background: #e0e0e0;
+        box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #fff;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            transform: translate(2%, -2%);
+        }
+
+        .card-content {
+            padding: 12px 14px;
+
+            h2 {
+                font-size: 20px;
+                font-family: 'Poppins', sans-serif;
+
+                a {
+                    text-decoration: none;
+                    color: #333;
+                    transition: 0.2s ease-in-out;
+
+                    &:hover {
+                        color: #359df9;
+                    }
+                }
+            }
+
+            p {
+                margin-top: 10px;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            button {
+                padding: 4px 8px;
+                margin: 12px 0;
+                border: 1px solid #359df9;
+                background-color: #359df9;
+                color: #fff;
+                font-size: 15px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+                font-family: 'Poppins', sans-serif;
+
+                &:hover {
+                    background: transparent;
+                    color: #333;
+                }
+
+            }
+
+        }
+
+    }
+}
+
+/***************CIERRE BLOG NOVEDADES**************/

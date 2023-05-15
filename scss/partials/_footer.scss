@@ -1,0 +1,77 @@
+/*AQUI COMIENZA EL FOOTER*/
+
+footer {
+    width: 100%;
+    padding: 50px 0px;
+    font-family: 'Poppins', sans-serif;
+    background-color: $color-header-footer;
+    background-size: cover;
+
+    .container__footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    .box__footer {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+
+        .terms {
+            max-width: 350px;
+            margin-top: 20px;
+            font-weight: 300;
+            color: $font-main-color;
+            font-size: 18px;
+
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            color: $font-main-color;
+            font-weight: 400;
+        }
+
+        a {
+            margin-top: 10px;
+            color: $font-main-color;
+            font-weight: 600;
+
+            .fab {
+                font-size: 20px;
+            }
+        }
+
+        .box__footer a:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .box__footer .logo img {
+        width: 180px;
+    }
+
+    .box__copyright {
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
+        padding: 0px 40px;
+
+        p {
+            margin-top: 20px;
+            color: $font-main-color;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: $font-main-color;
+        }
+    }
+}
+
+/***************FIN DEL FOOTER**************/

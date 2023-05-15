@@ -1,0 +1,106 @@
+/***************INICIO PLANES**************/
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 200px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .tabla {
+        width: 33%;
+        max-width: 350px;
+        height: auto;
+        margin: 20px;
+        border: 1px solid #359df938;
+        border-radius: 70px;
+        box-shadow: 0px 0px 4px 0px #359df917;
+        padding: 30px;
+        text-align: center;
+        flex-grow: 1;
+        color: $color-primary;
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 35px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        img {
+            width: 64px;
+            margin-bottom: 35px;
+        }
+
+        h3 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        p {
+            display: block;
+            margin-bottom: 50px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .boton {
+            display: inline-block;
+            width: 150px;
+            padding: 12px;
+            background: $font-main-color;
+            text-decoration: none;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            border-radius: 100px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            margin: auto;
+        }
+    }
+
+    .tabla:hover {
+        background: $color-primary;
+        color: #f1f1f2;
+        transition: .5s all;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .tabla {
+            width: 45%;
+            max-width: none;
+            margin-bottom: 40px;
+            flex-grow: initial;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        .tabla {
+            width: 80%;
+            padding: 30px;
+            margin: 10px;
+        }
+
+        .tabla>h2 {
+            margin-top: 40px;
+        }
+    }
+
+    @media screen and (max-width:550px) {
+        .tabla {
+            width: 100%;
+            padding: 20px;
+            margin: 10px 0;
+        }
+    }
+
+}
+
+/***************FIN PLANES**************/
