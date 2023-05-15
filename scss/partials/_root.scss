@@ -6,7 +6,7 @@
 }
 
 :root {
-    --color-esqueleto: $color-esqueleto;
+    --color-esqueleto: map-get($colors, color-esqueleto);
 }
 
 .container__all {
