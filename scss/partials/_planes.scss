@@ -23,7 +23,7 @@
         padding: 30px;
         text-align: center;
         flex-grow: 1;
-        color: $color-primary;
+        color: map-get($colors, color-primary);
 
         h2 {
             font-size: 30px;
@@ -52,7 +52,7 @@
             display: inline-block;
             width: 150px;
             padding: 12px;
-            background: $font-main-color;
+            background: map-get($colors, font-main-color);
             text-decoration: none;
             color: #ffffff;
             font-family: 'Poppins', sans-serif;

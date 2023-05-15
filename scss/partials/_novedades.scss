@@ -49,13 +49,13 @@ section {
         h1 {
             font-size: 60px;
             font-family: 'Poppins', sans-serif;
-            color: $font-main-color;
+            color: map-get($colors, font-main-color);
         }
 
         p {
             font-size: 24px;
             font-family: 'Poppins', sans-serif;
-            color: $font-main-color;
+            color: map-get($colors, font-main-color);
         }
 
         span {

@@ -7,7 +7,7 @@
 }
 
 :root {
-  --color-esqueleto: $color-esqueleto;
+  --color-esqueleto: map-get($colors, color-esqueleto);
 }
 
 .container__all {
@@ -156,7 +156,6 @@ header .logo img {
 .container__vector {
   position: relative;
 }
-
 .container__vector img {
   position: absolute;
   bottom: 10px;
@@ -165,7 +164,6 @@ header .logo img {
   animation: move_vector 6s ease-in-out infinite;
   transition: all 300ms;
 }
-
 @keyframes move_vector {
   0% {
     transform: translateY(10px);
@@ -178,10 +176,11 @@ header .logo img {
   }
 }
 @media screen and (max-width: 920px) {
-  .container__vector img {
+  .container__vector .container__vector img {
     width: 500px;
   }
 }
+
 @media screen and (max-width: 760px) {
   .container__all {
     position: absolute;

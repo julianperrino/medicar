@@ -4,7 +4,7 @@ footer {
     width: 100%;
     padding: 50px 0px;
     font-family: 'Poppins', sans-serif;
-    background-color: $color-header-footer;
+    background-color: map-get($colors, color-header-footer);
     background-size: cover;
 
     .container__footer {
@@ -25,20 +25,20 @@ footer {
             max-width: 350px;
             margin-top: 20px;
             font-weight: 300;
-            color: $font-main-color;
+            color: map-get($colors, font-main-color);
             font-size: 18px;
 
         }
 
         h2 {
             margin-bottom: 30px;
-            color: $font-main-color;
+            color: map-get($colors, font-main-color);
             font-weight: 400;
         }
 
         a {
             margin-top: 10px;
-            color: $font-main-color;
+            color: map-get($colors, font-main-color);
             font-weight: 600;
 
             .fab {
@@ -63,13 +63,13 @@ footer {
 
         p {
             margin-top: 20px;
-            color: $font-main-color;
+            color: map-get($colors, font-main-color);
         }
 
         hr {
             border: none;
             height: 1px;
-            background-color: $font-main-color;
+            background-color: map-get($colors, font-main-color);
         }
     }
 }
